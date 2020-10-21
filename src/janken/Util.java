@@ -35,7 +35,7 @@ public class Util {
 			BufferedReader br = new BufferedReader(filereader);
 			String[] strs = br.readLine().split(",");
 
-			if (strs.length == 5)
+			if (strs.length != 5)
 				throw new Exception();
 
 			for (String str : strs) {
